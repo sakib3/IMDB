@@ -31,3 +31,31 @@ body{
 	margin-bottom: 10px;
 	max-height: 200px;
 }
+
+.moviedetails {
+	margin-top: 40px;
+}
+.moviedetails .poster{
+	float: left;
+	margin-right: 20px;
+}
+
+.moviedetails .movie-title{
+	font-family: 'Droid', cursive;
+	font-size: 35px;
+	
+
+}
+.moviedetails .btn-info{
+	margin-right: 5px;
+	
+}
+.moviedetails .overview{
+	font-size: 17px;
+	margin: 15px 5% 15px 0;
+	
+}
+
+.moviedetails .return-link{
+	float: right;
+}

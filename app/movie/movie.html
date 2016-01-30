@@ -1,6 +1,13 @@
-<div class="well moviedetails col-xs-12">
+<div class="well  col-xs-12 moviedetails">
 	<img ng-src="img/posters{{movie.poster_path}}" class="poster img-thumbnail img-responsive">
 	
+	<a href="#" class="return-link">
+		<button class="return-btn btn btn-default">
+			<span class="glyphicon glyphicon-arrow-left">
+				Return to Catalog
+			</span>
+		</button>
+	</a>
 	<h1 class="movie-title">{{movie.title}}({{movie.release_date | date: 'yyyy'}})</h1>
 	
 	<a ng-repeat="genre in movie.genres" href="#" class="btn btn-info">{{genre.name}}</a>
