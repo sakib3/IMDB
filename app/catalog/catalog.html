@@ -6,7 +6,7 @@
 		</div>
 
 		<div class="movie-container col-sm-2 col-xs-6" ng-repeat="movie in movieList | paginate:currentPage:pageSize">
-			<a href="#" class="movie-thumb">
+			<a href="#/movie/{{movie.id}}" class="movie-thumb">
 				<img ng-src="img/posters{{movie.poster_path}}" alt="" class="thumbnail img-responsive">
 				<h5>{{movie.title}}</h5>
 			</a>
