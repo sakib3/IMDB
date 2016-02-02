@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module("movieDB",['ngRoute','movieDB.movie','movieDB.catalog','movieDB.paginate-filter'])
+angular.module("movieDB",['ngRoute','movieDB.movie','movieDB.catalog','movieDB.paginate-filter','movieDB.movie-service'])
 	   .config(['$routeProvider',function($routeProvider){
 	   		$routeProvider
 	   					.when("/",{templateUrl: "catalog/catalog.html", controller: "catalogCtrl"})
