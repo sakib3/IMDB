@@ -2,7 +2,7 @@
 	<div class="row">
 		
 		<div class="col-xs-12">
-			<div class="page-header section-title">Most Watches this week</div>
+			<div class="page-header section-title">{{pageTitle}}</div>
 		</div>
 
 		<div class="movie-container col-sm-2 col-xs-6" ng-repeat="movie in movieList | paginate:currentPage:pageSize">
@@ -27,7 +27,7 @@
 			<span class="badge">{{movieList.length}}</span>All
 		</a>
 
-		<a ng-repeat="genre in genreList" class="list-group-item">
+		<a href="#/genre/{{genre.name}}"ng-repeat="genre in genreList" ng-class="{active: genre.name ==genreName}" class="list-group-item">
 			<span class="badge">{{genre.total}}</span>
 			{{genre.name}}
 		</a>
