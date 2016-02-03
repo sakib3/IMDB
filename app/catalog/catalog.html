@@ -23,6 +23,13 @@
 		by genre
 	</div>
 	<div class="list-group">
-		
+		<a href="#/" class="list-group-item">
+			<span class="badge">{{movieList.length}}</span>All
+		</a>
+
+		<a ng-repeat="genre in genreList" class="list-group-item">
+			<span class="badge">{{genre.total}}</span>
+			{{genre.name}}
+		</a>
 	</div>
 </div>
