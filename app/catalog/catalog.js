@@ -11,5 +11,10 @@ angular.module("movieDB.catalog", ['ui.bootstrap'])
 
 				$scope.movieList = data;
 			});
+
+			movieAPIservice.getGenres().success(function(data){
+
+				$scope.genreList = data;
+			});
 			
 		}])

@@ -8,5 +8,9 @@ angular.module('movieDB.movie-service', [])
 				return $http.get('json/movies.json');
 			}
 
+			movieAPI.getGenres = function(){
+				return $http.get('json/genres.json');
+			}
+
 			return movieAPI;
 		}]);
