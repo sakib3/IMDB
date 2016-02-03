@@ -7,6 +7,7 @@ angular.module("movieDB",[
 			'movieDB.paginate-filter',
 			'movieDB.movie-service'
 		])
+
 	   .config(['$routeProvider',function($routeProvider){
 	   		$routeProvider
 	   					.when("/",{templateUrl: "catalog/catalog.html", controller: "catalogCtrl"})
