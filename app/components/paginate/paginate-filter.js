@@ -1,5 +1,6 @@
 'use restrict';
 angular .module('movieDB.paginate-filter',[])
+
 		.filter('paginate', function(){
 			return function(arr,currentPage,pageSize){
 				try{
@@ -7,5 +8,14 @@ angular .module('movieDB.paginate-filter',[])
 				}catch(err){
 					return arr;
 				}
+			};
+		})
+
+		.filter('revertWords', function(){
+			return function(input){
+				var delimiter = " ";
+				
+				if(input)
+					return input.split(delimiter).reverse().join(delimiter);
 			};
 		});
